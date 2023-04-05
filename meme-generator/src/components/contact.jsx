@@ -1,4 +1,5 @@
 import React from "react"
+import Star from "./starIcon"
 
 function Contact() {
 
@@ -10,7 +11,6 @@ function Contact() {
         isFavorites: false
     })
 
-    let starIcon = contact.isFavorites ? "star-filled.png" : "star-empty.png"
 
     function toggleFavorite() {
         setContact(prevContact => {
@@ -23,7 +23,7 @@ function Contact() {
 
     return (
         <div>
-            <img onClick={toggleFavorite} className="star--img" src={`../src/assets/${starIcon}`} />
+            <Star isFilled={contact.isFavorites} handleClick={toggleFavorite} />
             <h2>
                 {contact.firstName} {contact.lastName}
             </h2>

@@ -1,4 +1,5 @@
 import React from "react"
+import Count from "./count"
 function Counter() {
     const [count, setCount] = React.useState(0)
 
@@ -13,9 +14,7 @@ function Counter() {
     return (
         <div>
             <button onClick={sub} >-</button>
-            <div>
-                <h1>{count}</h1>
-            </div>
+            <Count number={count} />
             <button onClick={add}>+</button>
         </div>
     )

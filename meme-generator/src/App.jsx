@@ -1,7 +1,7 @@
 import './App.css'
 import Meme from './components/meme'
 import Header from './components/header'
-import Contact from './components/contact'
+import Form from './components/forms'
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div>
       {/* <Header />
       <Meme /> */}
-      <Contact />
+      <Form />
     </div>
   )
 }
